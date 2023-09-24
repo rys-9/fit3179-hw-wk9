@@ -4,7 +4,7 @@
     "height": 405,
     "title": "Map",
     "projection": {"type": "albersUsa"},
-    "background": "white",
+    "background": "e4e4e4",
     "config": {
         "view": {
         "stroke": "transparent"
@@ -38,7 +38,7 @@
 
           ],
 
-          
+
 
         "mark": {
             "type": "geoshape", 
