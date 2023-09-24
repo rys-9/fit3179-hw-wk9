@@ -4,7 +4,7 @@
     "height": 405,
     "title": "Map",
     "projection": {"type": "albersUsa"},
-    "background": "skyblue",
+    "background": "white",
     "config": {
         "view": {
         "stroke": "transparent"
@@ -51,7 +51,7 @@
             },
 
             "tooltip": [
-                {"field": "Name", "type": "nominal", "title": "State"},
+                {"field": "properties.postal", "type": "nominal", "title": "State"},
                 {"field": "Population", "type": "quantitative", "title": "Population"}
             ]
         }
