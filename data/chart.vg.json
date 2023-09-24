@@ -1,0 +1,66 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "width": 720,
+    "height": 405,
+    "title": "Test Title",
+    "projection": {"type": "albersUsa"},
+    "background": "skyblue",
+    "config": {
+        "view": {
+        "stroke": "transparent"
+        }
+    },
+
+    "layer": [
+      {
+
+        "data": {
+          "url": "./data/usa_map.json",
+          "format": {"type": "topojson", "feature": "usa_map"}
+        },
+
+        "transform": [
+            {
+              "lookup": "Name",
+              "from": {
+                "data": {
+                  "url": "./data/US_Population_2022.csv"
+                },
+                "key": "Name",
+                "fields": ["Population_2022"]
+              }
+            },
+            {"calculate": "datum.Population_2022", "as": "Population"}
+          ],
+
+        "mark": {
+            "type": "geoshape", 
+            "stroke": "black", 
+            "strokeWidth": 0.5
+        },
+
+        "encoding": {
+            "color": {
+              "field": "Population",
+              "type": "quantitative",
+              "scale": {
+                "scheme": "blues",
+                "domain": [0, 40000000],
+                "zero": true
+              }
+            },
+
+            "tooltip": [
+                {"field": "Name", "type": "nominal", "title": "State"},
+                {"field": "Population", "type": "quantitative", "title": "Population"}
+            ]
+        }
+        
+      },
+
+      {
+
+      }
+      
+    ]
+  }

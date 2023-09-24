@@ -1,0 +1,37 @@
+:root {
+    background-color: #ffffff;
+    padding: 2em;
+    padding-top: 2em;
+}
+
+.container {
+    display: flex;
+    justify-content: center; /* Horizontally center */
+    align-items: center; /* Vertically center */
+    /* height: 200px; */
+    padding: 1cm;
+    background-color: rgb(159, 159, 159);
+}
+
+
+.spacer {
+    height: 1cm;
+    background-color: #ffffff;
+}
+
+#title {
+    display: flex;
+    justify-content: center; /* Horizontally center */
+    align-items: center; /* Vertically center */
+    height: 200px;
+    background-color: rgb(159, 159, 159);
+}
+
+
+H1 {
+    color: #000000;
+    font-size: 50px;
+    font-family: 'Courier New', monospace;
+    font-weight: bolder;
+    background-color: #a94c4c;
+}
