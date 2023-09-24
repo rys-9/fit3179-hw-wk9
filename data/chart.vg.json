@@ -2,7 +2,7 @@
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
     "width": 720,
     "height": 405,
-    "title": "Map",
+    "title": "Population by State",
     "projection": {"type": "albersUsa"},
     "background": "e4e4e4",
     "config": {
