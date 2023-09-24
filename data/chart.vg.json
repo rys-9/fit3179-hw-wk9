@@ -4,7 +4,7 @@
     "height": 405,
     "title": "Population by State",
     "projection": {"type": "albersUsa"},
-    "background": "#e4e4e4",
+    "background": "#fcfcfc",
     "config": {
         "view": {
         "stroke": "transparent"
