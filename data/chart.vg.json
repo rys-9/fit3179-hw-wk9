@@ -19,8 +19,12 @@
           "format": {"type": "topojson", "feature": "usa_map"}
         },
 
+
+
         "transform": [
+
             {
+
               "lookup": "properties.postal",
               "from": {
                 "data": {
@@ -31,13 +35,18 @@
               }
             },
             {"calculate": "datum.Population_2022", "as": "Population"}
+
           ],
+
+          
 
         "mark": {
             "type": "geoshape", 
             "stroke": "black", 
             "strokeWidth": 0.5
         },
+
+
 
         "encoding": {
             "color": {
@@ -51,8 +60,8 @@
             },
 
             "tooltip": [
-                {"field": "properties.postal", "type": "nominal", "title": "State"},
-                {"field": "Population", "type": "quantitative", "title": "Population"}
+                {"field": "properties.name", "type": "nominal", "title": "State"},
+                {"field": "Population", "type": "quantitative", "title": "Population", "format": ",d"}
             ]
         }
         

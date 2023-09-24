@@ -10,7 +10,7 @@
     align-items: center; /* Vertically center */
     /* height: 200px; */
     padding: 1cm;
-    background-color: rgb(159, 159, 159);
+    background-color: rgb(203, 203, 203);
 }
 
 
@@ -24,7 +24,7 @@
     justify-content: center; /* Horizontally center */
     align-items: center; /* Vertically center */
     height: 200px;
-    background-color: rgb(159, 159, 159);
+    background-color: rgb(203, 203, 203);
 }
 
 
@@ -33,5 +33,5 @@ H1 {
     font-size: 50px;
     font-family: 'Courier New', monospace;
     font-weight: bolder;
-    background-color: #4c74a9;
+    background-color: #d9b974;
 }
