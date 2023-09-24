@@ -21,7 +21,7 @@
 
         "transform": [
             {
-              "lookup": "postal",
+              "lookup": "properties.postal",
               "from": {
                 "data": {
                   "url": "https://raw.githubusercontent.com/rys-9/fit3179-hw-wk9/main/data/US_Population_2022.csv"
