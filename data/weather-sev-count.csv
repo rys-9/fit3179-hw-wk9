@@ -1,4 +1,4 @@
-Weather Condition,Severity,Number of Occurrences
+Weather_Condition,Severity,Num_of_Occurrences
 Cloudy,2,11192
 Cloudy,4,306
 Drizzle,2,24
